@@ -1,0 +1,21 @@
+
+  
+   img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+   }
+   p,h1,h2,h3,h4,h5,h6,ul,ol {
+   margin: 0;
+   padding-left:0 ;
+   bottom: 0;
+   list-style-type: none;
+   }
+   .header >.container{
+    display: flex;
+    align-items: center;
+   }
+   .html{
+    box-sizing:border-box;
+    }
+  

@@ -1,0 +1,31 @@
+.team{
+    background-color: var(--team-backgroung-color);
+  }
+  .name-title{
+   margin-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 10px;
+  color:var(--title-text-color);
+  }
+  .description-work{
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
+  color:var(--primary-text-color);
+  }
+  .taem-item{ 
+   background-color:var(--primary-backgroungd-color);
+   box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .team-list{
+  display: flex;
+  gap: 30px;
+  }
