@@ -1,6 +1,11 @@
 .clients-list{
-    gap: 30px;
+    // gap: 30px;
+    // display: flex;
     display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  cursor: pointer;
+  
    }
    
    .clients-link{
@@ -24,8 +29,14 @@
    border-color: var(--accent-color);
    }
    .clients-item {
-   width:170px;
-   height:92px;
+    width: calc((100% - 30px) / 2);
+    height: 92px;
+    @media screen and(min-width:768){
+      width: calc((100% - 30px) / 3);
+      }
+    @media screen and(min-width:1200px) {
+        width: calc((100% - 150px) / 6);
+    }
    }
    .clients-items {
    width: calc((100% - 150px) / 6);

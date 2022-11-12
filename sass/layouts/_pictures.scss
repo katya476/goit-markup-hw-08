@@ -1,6 +1,15 @@
 .pictures{
+    justify-content: center;
     padding-top: 0;
+
+    @media screen and (max-width:1200px){
+      display: none;
+      
     }
+    
+      
+    } 
+    
     .pictures__list{
     display: flex;
     gap: 30px;

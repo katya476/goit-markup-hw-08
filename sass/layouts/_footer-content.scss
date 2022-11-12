@@ -1,5 +1,10 @@
 .footer-logo-adress {
-    display: block;
+    //display: block;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-left: 123px;
   }
   .logo-link-footer{
    font-family: 'Raleway';
@@ -35,4 +40,13 @@
     }
     .footer-item:not(:last-child) { 
      margin-bottom: 9px;
+   }
+   .footer__container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+     
+    @media screen  and (max-width:489px){
+      width: 480px;
+    }
    }

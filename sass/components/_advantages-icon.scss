@@ -1,12 +1,25 @@
 .advantages__list{
-    display: flex;
+    
     text-align: center;
     gap: 30px;
+ 
+    @media screen  and (min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+      }
+    @media screen  and (min-width:1600px){
+        width:1200px;
+        display: flex;
+      }
     }
     
     .advantages__item{
-    width: calc(( 100% - 90% ) / 4);
-    
+   
+        @media screen  and (min-width:768px){
+        flex-basis: calc((100% - 30px) / 2);
+        width: 354px;
+            
+          }
     }
     .advantages__icon{
     margin-bottom: 30px;
@@ -16,6 +29,7 @@
     justify-content: center;    
     background-color:#F5F4FA;
     border-radius: 4px;
+    
     }
     .icon{
     width: 70px;

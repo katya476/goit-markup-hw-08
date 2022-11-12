@@ -11,13 +11,22 @@ body{
         padding: 94px 0;
        }
        
-       .container1 {
+       .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin: auto;
+      
+      @media screen and (min-width:480px){
+        width: 480px;
+      }
+      @media screen  and (min-width:768px){
+        width:768px;
+      }
+      @media screen  and (min-width:1200px){
         width: 1200px;
-       padding: 0 15px;
-        margin: 0 auto;
-       margin: 0 auto; 
-       width: 480px;
-       height: 400;
-       padding:0 auto ;
+      }
 
-       }
+
+    }
+      
+       
