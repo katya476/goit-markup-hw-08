@@ -104,7 +104,6 @@ background-color: var(--primary-backgroungd-color);
 
 
 .menu-contact{
-  padding-left: 40px;
   margin-bottom: 64px;
 }
 .menu-contact__link{
@@ -170,8 +169,8 @@ letter-spacing: 0.02em;
   font-size: 18px;
   line-height: 22px;
   display: flex;
-}
-.menu-social :not(:last-child){
+  gap: 20px;}
+.menu-social:not(:last-child){
   padding-right:20px ;
   
 }
@@ -179,8 +178,19 @@ letter-spacing: 0.02em;
   color: var(--accent-color);
   text-decoration: none;
   font-size: 18px;
-line-height: 22px;
-letter-spacing: 0.02em;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+.menu-social__item{
+position: relative;
+}
+.menu-social__item:not(:last-child)::after{
+  content: '';
+  position: absolute;
+  right: -10px;
+  width: 1px;
+  height: 22px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 /*menu-btn*/
 .btn-menu-open{
