@@ -88,12 +88,12 @@ referrerpolicy="no-referrer" />
   
     <!---------------hero------------->
   <main> 
-    <!--------------- <section class="hero section">
-        <div class=" container hero__container "> 
+    <section class="hero section">
+        <div class=" container  "> 
       <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
       <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
     </div>
-    </section>------------->
+    </section>
    
       
   
@@ -156,11 +156,12 @@ referrerpolicy="no-referrer" />
           <h2 class="section-title pictures__section-title  ">Чим ми займаємося</h2>
           <ul class="pictures__list">
             <li class="pictures__item"> 
+             
                 <img
                 srcset="./imagens/desktop/comp@1x.desktop.jpg 1x, ./imagens/desktop/comp@2x.desktop.jpg 2x"
                 src="./imagens/original/computer.jpg"
                 alt="компьютер на столі"
-                width="370" />
+              />
                 <h3 class="pictures__lable">Десктопні додатки</h3>          
             </li>
             <li class="pictures__item">
@@ -168,7 +169,7 @@ referrerpolicy="no-referrer" />
               srcset="./imagens/desktop/phone@1x.desktop.jpg 1x, ./imagens/desktop/phone@2x.desktop.jpg 2x "
                 src="./imagens/original/phone.jpg"
                 alt="людина тримає телефон "
-                width="370"
+               
               />
               <h3 class="pictures__lable">Мобільні додатки</h3>
             </li>
@@ -177,7 +178,7 @@ referrerpolicy="no-referrer" />
               srcset="./imagens/desktop/color@1x.desktop.jpg 1x, ./imagens/desktop/color@2x.desktop.jpg 2x "
                 src="./imagens/original/color.jpg"
                 alt="планшет з кольоровим зображеням "
-                width="370"
+                
               />
               <h3 class="pictures__lable">Дизайнерські рішення</h3>
             </li>
@@ -187,15 +188,29 @@ referrerpolicy="no-referrer" />
         
        
           <!--------------Team------------->
-          <!---------------<section class="team section">
+          <section class="team section">
               <div class="container">
             <h2 class="section-title">Наша команда</h2>
             <ul class="team-list">
               <li class="taem-item">
+              <picture>
+                <source
+                srcset="./imagens/desktop/igor@1x.desktop.jpg 1x,./imagens/desktop/igor@2x.desktop.jpg 2x"
+                media="(min-width:1200px)"/>
+             
+                <source
+                srcset="./imagens/tablet/igor@1x.tab.jpg 1x,./imagens/tablet/igor@2x.tab.jpg 2x"
+                media="(min-width:768px)"/>
+      
+                 <source
+                srcset="./imagens/mob/igor@1.mob.jpg 1x,./imagens/mob/igor@2mob.jpg 2x"
+                media="(max-width:767px)"/>
                 <img
-                  src="./imagens/img.jpg"
-                  alt=" чоловік в окулярах "
-                  width="270"/>
+                src="./imagens/original/img.jpg"
+                alt=" чоловік в окулярах "
+                width="450px"/>
+              </picture>
+               
                    <div class="thumb-team"> 
             <h3 class="name-title">Ігор Дем'яненко</h3>
             <p class="description-work">Product Designer</p>
@@ -234,10 +249,25 @@ referrerpolicy="no-referrer" />
               </li>
     
               <li class="taem-item">
-                <img
-                  src="./imagens/img-1.jpg"
+                <picture>
+                  <source 
+                  srcset="./imagens/desktop/olga@1.desktop.jpg 1x,./imagens/desktop/olga@2x.desktop.jpg 2x"
+                  media="(min-width:1200px)"
+                  />
+                  <source
+                  srcset="./imagens/tablet/olga@1x.tab.jpg 1x,./imagens/tablet/olga@2x.tab.jpg 2x"
+                  media="(min-width:768px)"/>
+                  
+                  <source
+                  srcset="./imagens/mob/olga@1.mob.jpg 1x,./imagens/mob/olga@2.mob.jpg 2x"
+                  media="(max-width:767px)"/>
+
+                  <img
+                  src="./imagens/original/img-1.jpg"
                   alt="дівчина в чорному жакеті "
-                  width="270"/>
+                  width="450px"/>
+                </picture>
+                
               <div class="thumb-team">
                 <h3 class="name-title">Ольга Рєпіна</h3>
                 <p class="description-work">Frontend Developer</p>
@@ -279,11 +309,24 @@ referrerpolicy="no-referrer" />
                 
     
               <li class="taem-item">
-                <img
-                  src="./imagens/img-2.jpg"
+                <picture>
+                  <source
+                  srcset="./imagens/desktop/kolya@1x.desktop.jpg 1x,./imagens/desktop/kolya@2x.desktop.jpg 2x"
+                  media="(min-width:1200px)"/>
+                  <source
+                  srcset="./imagens/tablet/kolya@1x.tab.jpg 1x,./imagens/tablet/kolya@2x.tab.jpg 2x"
+                  media="(min-width:768px)"/>
+                  <source
+                  srcset="./imagens/mob/kolya@1.mob.jpg 1x,./imagens/mob/kolya@2.mob.jpg 2x"
+                  media="(max-width:767px)"
+                  />
+                  <img
+                  src="./imagens/original/img-2.jpg"
                   alt=" чоловік в голубій сорочці "
-                  width="270"
+                  width="450px"
                 />
+                </picture>
+                
                 <div class="thumb-team">
                 <h3 class="name-title">Микола Тарасов</h3>
                 <p class="description-work">Marketing</p>
@@ -323,9 +366,9 @@ referrerpolicy="no-referrer" />
     
               <li class="taem-item">
                 <img
-                  src="./imagens/img-3.jpg"
+                  src="./imagens/original/img-3.jpg"
                   alt=" чоловік з бородою в окулярах"
-                  width="270"/>
+                  width="450px"/>
                   <div class="thumb-team">
                     <h3 class="name-title">Михайло Єрмаков</h3>
                     <p class="description-work">UI Designer</p>
@@ -364,7 +407,7 @@ referrerpolicy="no-referrer" />
               
             </ul>
           </div>
-        </section>------------>
+        </section>
          
              
      
@@ -416,44 +459,48 @@ referrerpolicy="no-referrer" />
     <!-----------------footer----------------->
    <footer class="footer ">
       <div class="container footer__container">
-        <div class="footer-logo-address"> 
-          <a class="logo-link-footer" href="./index.html">Web<span class="accent-footer">Studio</span></a>
-          <address class="footer-address">
-            <ul class=" footer-list list">
-              <li class="footer-item">
-                <a
-                  href="https://goo.gl/maps/cBfPUUdTkWm3vrpWA"
-                  target="_blank"
-                  rel="noopener norefeferrer"
-                  class="contacts-link-address"
-                  >м. Київ, пр-т Лесі Українки, 26</a>
-              </li>
-    
-              <li class="footer-item"><a href="mailto:info@devstudio.com" class="contacts-link-footer">info@devstudio.com</a></li>
-              <li class="footer-item"><a href="tel:+380961111111" class="contacts-link-footer">+38 096 111 11 11</a></li>
-            </ul>
-          </address>
+        <div class="address-soc">
+          <div class="footer-logo-address"> 
+            <a class="logo-link-footer" href="./index.html">Web<span class="accent-footer">Studio</span></a>
+            <address class="footer-address">
+              <ul class=" footer-list list">
+                <li class="footer-item">
+                  <a
+                    href="https://goo.gl/maps/cBfPUUdTkWm3vrpWA"
+                    target="_blank"
+                    rel="noopener norefeferrer"
+                    class="contacts-link-address"
+                    >м. Київ, пр-т Лесі Українки, 26</a>
+                </li>
+      
+                <li class="footer-item"><a href="mailto:info@devstudio.com" class="contacts-link-footer">info@devstudio.com</a></li>
+                <li class="footer-item"><a href="tel:+380961111111" class="contacts-link-footer">+38 096 111 11 11</a></li>
+              </ul>
+            </address>
+          </div>
+      <div  class="footer-soc">
+         <h2 class="footer-soc-title ">приєднуйтесь</h2>
+        <ul class="footer-soc-list">
+        
+          <li class="footer-soc-items">
+          <a href="" class="footer-soc-link"><svg class="footer-soc-icon" width="20" height="20">
+            <use href="./imagens/icon.svg#icon-instagram"></use></svg></a></li>
+        
+          <li class="footer-soc-items">
+           <a href="" class="footer-soc-link"><svg class="footer-soc-icon" width="20" height="20">
+            <use href="./imagens/icon.svg#icon-twiter"></use></svg> </a></li>
+        
+          <li class="footer-soc-items">
+          <a href="" class="footer-soc-link"><svg class="footer-soc-icon" width="20" height="20">
+            <use href="./imagens/icon.svg#icon-facebook"></use></svg></a></li>
+        
+          <li class="footer-soc-items">
+          <a href="" class="footer-soc-link"><svg class="footer-soc-icon" width="20" height="20">
+            <use href="./imagens/icon.svg#icon-linkedin"></use></svg></a></li>
+        </ul></div>
         </div>
-    <div  class="footer-soc">
-       <h2 class="footer-soc-title ">приєднуйтесь</h2>
-      <ul class="footer-soc-list">
-      
-        <li class="footer-soc-items">
-        <a href="" class="footer-soc-link"><svg class="footer-soc-icon" width="20" height="20">
-          <use href="./imagens/icon.svg#icon-instagram"></use></svg></a></li>
-      
-        <li class="footer-soc-items">
-         <a href="" class="footer-soc-link"><svg class="footer-soc-icon" width="20" height="20">
-          <use href="./imagens/icon.svg#icon-twiter"></use></svg> </a></li>
-      
-        <li class="footer-soc-items">
-        <a href="" class="footer-soc-link"><svg class="footer-soc-icon" width="20" height="20">
-          <use href="./imagens/icon.svg#icon-facebook"></use></svg></a></li>
-      
-        <li class="footer-soc-items">
-        <a href="" class="footer-soc-link"><svg class="footer-soc-icon" width="20" height="20">
-          <use href="./imagens/icon.svg#icon-linkedin"></use></svg></a></li>
-      </ul></div>
+       
+
 <div class="form-thumb  thumb">
   <span class="form-title">Підпишіться на розсилку</span> 
   <form class="foot-form-field">
