@@ -97,7 +97,7 @@ header{
  .accent{
    color:var(--accent-color);
  }
-///
+
  .svg-menu.svg-cross{
 background-color: var(--primary-backgroungd-color);
  }
@@ -218,7 +218,8 @@ position: relative;
   color:var(--title-text-color);
   background-color: transparent;
   border: transparent;
-  cursor: pointer
+  cursor: pointer;
+
 }
 
  

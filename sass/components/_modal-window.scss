@@ -47,6 +47,10 @@
   justify-content: center;
   cursor: pointer;
   outline: transparent;
+
+  &:hover,:focus{
+    border-color: var(--accent-color);
+  }
 }
    
  .backdrop.is-hidden{
