@@ -365,10 +365,23 @@ referrerpolicy="no-referrer" />
               </li>
     
               <li class="taem-item">
-                <img
+                <picture>
+                  <source 
+                   srcset="./imagens/desktop/misha@1x.desktop.jpg 1x ,./imagens/desktop/misha@2x.desktop.jpg 2x"
+                   media="(min-width:1200px)" />
+                  <source
+                  srcset="./imagens/tablet/misha@1x.tab.jpg 1x ,./imagens/tablet/misha@2x.tab.jpg 2x"
+                  madia="(min-width:768px)"/>
+                  <source 
+                  srcset="./imagens/mob/misha@1.mob.jpg 1x ,./imagens/mob/misha@2.mob.jpg 2x"
+                  media="(max-width:767px)"
+                  />
+                  <img
                   src="./imagens/original/img-3.jpg"
                   alt=" чоловік з бородою в окулярах"
                   width="450px"/>
+                </picture>
+               
                   <div class="thumb-team">
                     <h3 class="name-title">Михайло Єрмаков</h3>
                     <p class="description-work">UI Designer</p>

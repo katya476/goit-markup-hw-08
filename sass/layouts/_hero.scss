@@ -8,7 +8,7 @@
     background-position: center;
     background-size: cover;
     margin:  0 auto;
-    width:100%;
+    max-width: 1600px;
 @media screen and(min-width:1200px) {
   padding: 200px 0 ;
 }
@@ -53,7 +53,9 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-backgroungd-color);
-
+     @media screen and(min-width:768px) {
+      max-width:360px;;
+     }
 @media screen and (min-width:1200px) {
     max-width: 696px;
     font-weight: 900;
