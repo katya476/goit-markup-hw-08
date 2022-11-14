@@ -13,7 +13,6 @@ header{
    .list-contact{
     @media screen and (max-width:767px) {
       display: none;
-
     }
     display: flex;
     flex-direction: column;
@@ -24,6 +23,7 @@ header{
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
+    align-items: start;
     @media screen and (min-width:1200px){
       flex-direction: row;
     align-items: center;

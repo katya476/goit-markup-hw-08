@@ -339,9 +339,14 @@ body {
   text-align: center;
   font-family: inherit;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.17;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 480px) {
+  .modal-form-title {
+    font-size: 20px;
+  }
 }
 
 .modal-list:not(:last-child) {
@@ -447,6 +452,7 @@ header {
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
+  align-items: start;
 }
 @media screen and (max-width: 767px) {
   .list-contact {
@@ -716,7 +722,7 @@ header {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imagens/desktop/header@2x.desktop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imagens/tablet/header@2x.tab.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -734,12 +740,17 @@ header {
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-backgroungd-color);
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -824,6 +835,11 @@ header {
   color: var(--title-text-color);
   line-height: 1.17;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .advantages__title {
+    text-align: start;
+  }
 }
 
 .advantages__description {
@@ -1021,6 +1037,7 @@ header {
 @media screen and (min-width: 1200px) {
   .footer-logo-address {
     align-items: flex-start;
+    gap: 0;
   }
 }
 
@@ -1062,6 +1079,11 @@ header {
   justify-content: center;
   margin-top: 20px;
   min-width: 231px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    min-width: none;
+  }
 }
 
 .footer-item:not(:last-child) {
@@ -1290,7 +1312,6 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    align-items: baseline;
     justify-content: space-between;
   }
 }
