@@ -63,3 +63,13 @@
    border-color: var(--accent-color);
    outline: transparent;
     }
+    .agreement-text{
+      font-size: 8px;
+      line-height: 1.71;
+      color: #757575;
+      cursor: pointer;
+      @media screen and(min-width:480px) {
+        font-size: 12px;
+    line-height: 1.71;
+      }
+    }
