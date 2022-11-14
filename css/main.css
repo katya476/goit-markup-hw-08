@@ -546,8 +546,8 @@ header {
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: 0.02em;
 }
 
@@ -568,7 +568,6 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #fff;
   width: 100vw;
   height: 100vh;
   z-index: 1;
@@ -625,9 +624,16 @@ header {
 .menu-social__link {
   color: var(--accent-color);
   text-decoration: none;
-  font-size: 18px;
-  line-height: 22px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.22;
   letter-spacing: 0.02em;
+}
+@media screen and (min-width: 480px) {
+  .menu-social__link {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .menu-social__item {
@@ -679,11 +685,19 @@ header {
   color: var(--accent-color);
 }
 
+.tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
 .hero {
   background-color: var(--background-color);
   padding: 118px 0;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imagens/original/img.hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imagens/mob/header@1x.mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
