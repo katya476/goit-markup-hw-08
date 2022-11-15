@@ -1081,7 +1081,7 @@ header {
 
 .footer-address {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin-top: 20px;
   min-width: 231px;
 }
